@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sequence of prime numbers</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body>
+<div>
+    <div id="connecting">Connecting...</div>
+    <h3>Enter a value from 10 to 100 to determine the length of the array</h3>
+    <form id="sequenceForm" name="sequenceForm">
+        <div class="input-content">
+            <p id="arrayResponse"></p>
+            <label for="content">
+                <input type="text" id="content" autocomplete="off" placeholder="Type a message..."/>
+                <button type="submit" id="arrayGen" onclick="arrayGeneration()">send</button>
+            </label>
+        </div>
+    </form>
+    <div id="response">
+        <button type="submit" onclick="autoGeneration()">Auto Generation</button>
+        <button type="submit" onclick="generation()">Generation</button>
+    </div>
+</div>
+<script src="../static/js/numbers.js"></script>
+</body>
+</html>
